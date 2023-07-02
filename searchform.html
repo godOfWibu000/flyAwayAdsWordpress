@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/9806fd3724.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+    /*Share*/
+        .button_share {
+             display: block;
+             float: left;
+             padding: 10px 30px;
+             border:none;
+             background-color: #ececec;
+             text-decoration: none;
+             font-size: 18px;
+             color: #FFF;
+        }
+        .button_share:hover {
+         color: #efefef;
+        }
+        .share-icon {
+         background-color: #cc2127;
+         margin-right: 2%;
+         position: relative;
+         top: 20px;
+        }
+        .arrow-right {
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 10px solid #cc2127;
+          position: relative;
+          left: 75px;
+          top: 30px;
+        }
+        .facebook {
+         background-color: #3b5998;
+        }
+        .twitter {
+         background-color: #55acee;
+        }
+        .instagram {
+         background-color: #D980FA;
+        }
+    
+    /*Table*/
+        table{
+            border-collapse: collapse;
+            font-size: 20px;
+            width: 300px;
+        }
+        table th, td{
+            border: 0.5px solid grey;
+            padding: 5px;
+        }
+        table th{
+            text-align: left;
+            background-color: #eb3d00;
+            color: white;
+        }
+        table td span{
+            position: relative;
+            top: 5px;
+        }
+        table td:hover{
+            background-color: #bdc3c7;
+
+        }
+        table td a{
+            text-decoration: none;
+            color: #0167b2;
+        }
+    </style>
+</head>
+<body>
+    <div class="share">
+        <div class="share-button">
+            <div class="button_share share-icon">
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <div class="arrow-right"></div>
+        </div>
+        <a class="button_share facebook" href="">
+            <i class="fa-brands fa-facebook-f"></i>             
+        </a>
+        <a class="button_share twitter" href="">
+            <i class="fa-brands fa-twitter"></i>         
+        </a>
+        <a class="button_share instagram" href="">
+            <i class="fa-brands fa-instagram"></i>                 
+        </a>
+    </div>
+    <br><br><br>
+    <table>
+        <tr>
+            <th>Chuyên mục</th>
+        </tr>
+        <tr>
+            <a href="">
+            <td>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <a href="">Công nghệ</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <a href="">Games</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <a href="">Văn hóa</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <a href="">Nghệ thuật</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <a href="">Xã hội</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <a href="">Giải trí</a>
+            </td>
+        </tr>
+    </table>
+    <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '778012893561495',
+          xfbml      : true,
+          version    : 'v14.0'
+        });
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/vi_VN/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+</html>
